@@ -1,15 +1,21 @@
 # taskManager
-## web
-
 to launch this project you need to create a mongoDB project and provide the connection key in the ```.env```
 
 you will need node.js in order to launch the project 
 
 - first run ```npm install``` in project root file (just the first time or if dependency is manually added)
 - then run ```npm start``` to start project
+## web
+url to access the front ```http://localhost:8080/contact```
 
 ## Api
-you can access the service using the api see the following postman schemas 
+url to access Api is ```localhost:8080/```
+
+### Api tests
+ to run the tests run the cmd ```npm test```
+
+### Postman schema
+You can access the service using the api, see the following postman schemas 
 
 ``` {
 	"info": {
