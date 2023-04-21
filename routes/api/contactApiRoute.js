@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const contactApiController = require("../../controllers/api/contactApiController");
 
-// route pour récupérer la liste des contact : localhost/api/contact
+// route pour récupérer la liste des contact
 router.route("/").get(contactApiController.getContact);
 
 // route pour récupérer un contact par l'id
