@@ -4,7 +4,7 @@
   "description": "this app is a contact manager ",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=5000",
     "start": "nodemon app.js"
   },
   "author": "Claude Buisson",

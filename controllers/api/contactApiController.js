@@ -18,7 +18,8 @@ module.exports.getContactById = (req, res) => {
 // création d'un contact
 module.exports.newContactPost = (req, res) => {
   //  // renseigne la date du jour automatiquement
-   req.body.creationDate =  new Date().toISOString();
+  //  req.body.creationDate =  new Date().toISOString();
+  console.log(req.body);
    let contact = new Contact(req.body);
 
    let errorArray = [];
@@ -35,7 +36,7 @@ module.exports.newContactPost = (req, res) => {
      res.status(400).json(errorArray)
    } else {
      contact.save()
-       .then((data) => res.status(200).json(data)) 
+       .then((data) => { res.status(200).json(data);}) 
        .catch((error) => res.status(400).json(error));
   }
 };
