@@ -1,4 +1,4 @@
-# taskManager
+# contactProManager
 to launch this project you need to create a mongoDB project and provide the connection key in the ```.env```
 
 you will need node.js in order to launch the project 
